@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Создание квартиры</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""/>
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="navigation">
+    <nav class="navigation__info-panel">
+        <button class="navigation__button -full-screen"></button>
+        <button class="navigation__button -message">
+            <output id="message-unread" class="navigation__button-unread">7</output>
+        </button>
+        <button class="navigation__button -notification">
+            <output id="notification-unread" class="navigation__button-unread -bell">12</output>
+        </button>
+        <button class="navigation__button -menu"></button>
+    </nav>
+</header>
+
+
+<main class="creating-flat">
+    <div class="creating-flat__container">
+
+    </div>
+    <div class="creating-flat__grid-container">
+        <div class="creating-flat__nav-buttons">
+            <h1 class="creating-flat__banner">создание квартиры</h1>
+            <div class="creating-flat__buttons-container">
+                <button class="creating-flat__button-back">назад</button>
+                <button class="creating-flat__button-create">создать</button>
+            </div>
+        </div>
+        <form action="" class="creating-flat__add-data-form">
+            <h3 class="creating-flat__form-info -first-column">Добавьте данные по квартире.</h3>
+            <input class="creating-flat__input-field" type="text" title="" required placeholder="Номер квартиры*">
+            <label class="creating-flat__warning">*Обязательно</label>
+            <input class="creating-flat__input-field" type="text" title="" placeholder="Индекс квартиры">
+            <input class="creating-flat__input-field -small" type="text" title="" required placeholder="Общая площадь*">
+            <input class="creating-flat__input-field" type="text" title="" required placeholder="Жилая площадь*">
+            <input class="creating-flat__input-field -small" type="text" title="" required
+                   placeholder="Отапливаемая площадь*">
+            <select class="creating-flat__input-field" name="" id="" title="">
+                <option value="" disabled selected>Выберите дом*</option>
+                <option value="red">красный</option>
+                <option value="green">зелёный</option>
+                <option value="blue">синий</option>
+            </select>
+        </form>
+        <div class="creating-flat__add-plug-meter">
+            <h3 class="creating-flat__form-info -second-column">Подключите активные приборы учета.</h3>
+            <p class="creating-flat__info-message">*В вашем доме уже есть установленные приборы учета. Вы
+                можете подключить их.
+            </p>
+            <label class="creating-flat__tumbler">
+                <input type="checkbox"/>
+                <span class="creating-flat__tumbler-text">Подключить активные приборы учета</span>
+            </label>
+        </div>
+        <!--<div class="creating-flat__line"></div>-->
+        <div class="creating-flat__active-meters">
+            <h3 class="creating-flat__form-info -third-column">Активные приборы учета в вашем доме</h3>
+            <section class="creating-flat__active-meters-box">
+                <label class="creating-flat__tumbler">
+                    <input type="checkbox"/>
+                    <span class="creating-flat__tumbler-text creating-flat__mark-meter -electro">Электроэнегргия</span>
+                </label>
+            </section>
+            <section class="creating-flat__active-meters-box">
+                <label class="creating-flat__tumbler">
+                    <input type="checkbox"/>
+                    <span class="creating-flat__tumbler-text creating-flat__mark-meter -electro-twin">Электроэнегргия (двухзонный)</span>
+                </label>
+            </section>
+            <section class="creating-flat__active-meters-box">
+                <label class="creating-flat__tumbler">
+                    <input type="checkbox"/>
+                    <span class="creating-flat__tumbler-text creating-flat__mark-meter -heat-power">Теплоэнегрия</span>
+                </label>
+            </section>
+            <section class="creating-flat__active-meters-box">
+                <label class="creating-flat__tumbler">
+                    <input type="checkbox"/>
+                    <span class="creating-flat__tumbler-text creating-flat__mark-meter -water">Водосчетчик</span>
+                </label>
+            </section>
+            <section class="creating-flat__active-meters-box">
+                <label class="creating-flat__tumbler">
+                    <input type="checkbox"/>
+                    <span class="creating-flat__tumbler-text creating-flat__mark-meter -water-warm">Водосчетчик (горячая вода)</span>
+                </label>
+            </section>
+            <section class="creating-flat__active-meters-box">
+                <label class="creating-flat__tumbler">
+                    <input type="checkbox"/>
+                    <span class="creating-flat__tumbler-text creating-flat__mark-meter -outfall">Водоотведение</span>
+                </label>
+            </section>
+            <section class="creating-flat__active-meters-box">
+                <label class="creating-flat__tumbler">
+                    <input type="checkbox"/>
+                    <span class="creating-flat__tumbler-text creating-flat__mark-meter -gas">Газ</span>
+                </label>
+            </section>
+        </div>
+    </div>
+</main>
+<footer>
+</footer>
+</body>
+</html>
